@@ -30,3 +30,5 @@ RUN unzip /opt/TOS_ESB-20181026_1147-V7.1.1.zip -d /opt/TOS_ESB && \
 VOLUME ["/opt/TOS_ESB/Runtime_ESBSE/container/deploy"]
 
 EXPOSE 1099 8040/tcp 8080 8101 8181 8443 9001 44444
+
+CMD ["/opt/TOS_ESB/Runtime_ESBSE/container/bin/trun"]
