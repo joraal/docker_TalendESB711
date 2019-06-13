@@ -13,7 +13,7 @@ RUN apt-get -y update && \
 # Java installation
 RUN apt-add-repository -y ppa:webupd8team/java && \
 	apt-get -y update && \
-	yes | apt-get install -y --force-yes oracle-java8-installer
+	yes | apt-get install -y --force-yes default-jre oracle-java8-installer
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 # Download Talend Open Studio for ESB
 
