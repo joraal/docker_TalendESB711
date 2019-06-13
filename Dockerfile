@@ -11,10 +11,10 @@ RUN apt-get -y update && \
                 curl
 				
 # Java installation
-RUN apt-add-repository -y ppa:webupd8team/java && \
+RUN apt-add-repository -y ppa:openjdk-r/ppa && \
 	apt-get -y update && \
-	yes | apt-get install -y --force-yes default-jre oracle-java8-installer
-ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+	yes | apt-get install -y --force-yes openjdk-8-jdk
+ENV JAVA_HOME /usr/lib/jvm/openjdk-8
 # Download Talend Open Studio for ESB
 
 RUN curl -sSo /opt/TOS_ESB-20181026_1147-V7.1.1.zip https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip> /dev/null
