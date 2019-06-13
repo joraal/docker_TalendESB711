@@ -32,4 +32,4 @@ VOLUME ["/opt/TOS_ESB/Runtime_ESBSE/container/deploy"]
 
 EXPOSE 8040 9001 1099 44444 8101 8000 8001 8888 61616 2181 1527 8082 8088 8090
 
-CMD ["/opt/TOS_ESB/Runtime_ESBSE/container/bin/trun"]
+CMD ["/opt/TOS_ESB/Runtime_ESBSE/container/bin/trun &"]
