@@ -8,7 +8,8 @@ RUN apt-get -y update && \
 		software-properties-common unzip \
                 ca-certificates \
                 openssh-client \
-                curl
+                curl \
+		pico
 				
 # Java installation
 RUN apt-add-repository -y ppa:openjdk-r/ppa && \
