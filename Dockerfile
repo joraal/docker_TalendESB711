@@ -22,6 +22,7 @@ RUN curl -sSo /opt/TOS_ESB-20181026_1147-V7.1.1.zip https://download-mirror2.tal
 
 # Install Talend Open Studio for ESB
 
+
 RUN unzip /opt/TOS_ESB-20181026_1147-V7.1.1.zip -d /opt/TOS_ESB && \
 	rm /opt/TOS_ESB-20181026_1147-V7.1.1.zip && \
 	rm -rf /opt/TOS_ESB/Studio && \	
@@ -29,7 +30,7 @@ RUN unzip /opt/TOS_ESB-20181026_1147-V7.1.1.zip -d /opt/TOS_ESB && \
  	chmod 777 /opt/TOS_ESB/Runtime_ESBSE/container/bin/start
 	
 VOLUME ["/opt/TOS_ESB/Runtime_ESBSE/container/deploy"]
-
+VOLUME ["/opt/TOS_ESB/Runtime_ESBSE/container/etc"]
 
 EXPOSE 8040 9001 1099 44444 8101 8000 8001 8888 61616 2181 1527 8082 8088 8090
 
