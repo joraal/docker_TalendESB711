@@ -9,7 +9,7 @@ RUN apt-get -y update && \
                 ca-certificates \
                 openssh-client \
                 curl \
-		pico
+		nano
 				
 # Java installation
 RUN apt-add-repository -y ppa:openjdk-r/ppa && \
